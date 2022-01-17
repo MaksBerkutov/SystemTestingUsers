@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Module">
+      <UniqueIdentifier>{9cceb989-dbd7-4daa-af92-bd44e23d1cf4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Module\Users">
+      <UniqueIdentifier>{1dbfbf45-36e0-45e4-8d8b-e76aade032e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Module\Array">
+      <UniqueIdentifier>{98084572-0878-4405-b1fe-7e2deddc963d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Module\Menu">
+      <UniqueIdentifier>{e64e3a17-2f10-4851-a87e-360b4e1f0d31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Module\MD5">
+      <UniqueIdentifier>{00bcb83d-1763-4a95-a29e-f6b3adb4a5d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Module\SaveLoad">
+      <UniqueIdentifier>{fde96bea-e98a-406a-88eb-11060baffe28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Module\Test">
+      <UniqueIdentifier>{ce388b74-2630-4cff-8c3d-0492840cec42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Module\Report">
+      <UniqueIdentifier>{0684e26e-0e5a-468c-b283-e0ea7c720a7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Module\Date">
+      <UniqueIdentifier>{3e68da55-ab1b-491b-9639-fd8155f0638a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Module\Console">
+      <UniqueIdentifier>{841050ed-341d-49d5-8f0b-1a019ec4f7df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Module\Cabinet">
+      <UniqueIdentifier>{675a371f-7548-4850-a766-6c8d7f9f10fe}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="md5.cpp">
+      <Filter>Module\MD5</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Users.h">
+      <Filter>Module\Users</Filter>
+    </ClInclude>
+    <ClInclude Include="ArrayClass.h">
+      <Filter>Module\Array</Filter>
+    </ClInclude>
+    <ClInclude Include="Menuh.h">
+      <Filter>Module\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="md5.h">
+      <Filter>Module\MD5</Filter>
+    </ClInclude>
+    <ClInclude Include="GetValue.h">
+      <Filter>Module</Filter>
+    </ClInclude>
+    <ClInclude Include="SaveLoad.h">
+      <Filter>Module\SaveLoad</Filter>
+    </ClInclude>
+    <ClInclude Include="directory_set.h">
+      <Filter>Module\SaveLoad</Filter>
+    </ClInclude>
+    <ClInclude Include="Test.h">
+      <Filter>Module\Test</Filter>
+    </ClInclude>
+    <ClInclude Include="MySteck.h">
+      <Filter>Module\Array</Filter>
+    </ClInclude>
+    <ClInclude Include="Report.h">
+      <Filter>Module\Report</Filter>
+    </ClInclude>
+    <ClInclude Include="Date.h">
+      <Filter>Module\Date</Filter>
+    </ClInclude>
+    <ClInclude Include="CMD.h">
+      <Filter>Module\Console</Filter>
+    </ClInclude>
+    <ClInclude Include="Cabinet.h">
+      <Filter>Module\Cabinet</Filter>
+    </ClInclude>
+    <ClInclude Include="NamesSaveBD.h">
+      <Filter>Module</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
