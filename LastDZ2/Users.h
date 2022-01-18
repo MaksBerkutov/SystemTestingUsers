@@ -138,8 +138,9 @@ namespace Users {
 		}
 	}
 	void printUsrID(int ID) {
+		system("CLS");
 		WordColor("Имя: ", Black, LightRed, Black, LightBlue); std::cout << usr[ID].NameUsers << std::endl;
-		WordColor("Мобильный телефон", Black, LightRed, Black, LightBlue); std::cout << usr[ID].MobilePhone << std::endl;
+		WordColor("Мобильный телефон: ", Black, LightRed, Black, LightBlue); std::cout << usr[ID].MobilePhone << std::endl;
 		WordColor("Адреc: ", Black, LightRed, Black, LightBlue); std::cout << usr[ID].Country << std::endl;
 		WordColor("Последний вход: ", Black, LightRed, Black, LightBlue);
 		if (usr[ID].LastConect < 1000) { std::cout << "Не входил" << std::endl;; }

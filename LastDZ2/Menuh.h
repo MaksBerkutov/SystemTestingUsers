@@ -78,9 +78,6 @@ void createGrafic(float num, float all) {
 	WordColor("|", Black, Green);
 }
 
-
-
-
 int MenuMain(Array::ArrayClass<std::string> str,std::string Arrow="  >") {
 	system("CLS");
 	int curent = 0;
