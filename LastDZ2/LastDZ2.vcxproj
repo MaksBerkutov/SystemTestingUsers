@@ -149,6 +149,7 @@
     <ClInclude Include="directory_set.h" />
     <ClInclude Include="GetValue.h" />
     <ClInclude Include="Date.h" />
+    <ClInclude Include="Hash.h" />
     <ClInclude Include="md5.h" />
     <ClInclude Include="Menuh.h" />
     <ClInclude Include="MySteck.h" />

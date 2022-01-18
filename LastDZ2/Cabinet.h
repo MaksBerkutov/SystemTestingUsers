@@ -3,6 +3,34 @@
 #include"CMD.h"
 #include"Report.h"
 #include<algorithm>
+#include"Hash.h"
+struct HashSave {
+	char HashGroup[33];
+	char HashUser[33];
+	char HashReport[33];
+};
+HashSave GeTallHash() {
+	HashSave hash;
+	strcpy_s(hash.HashGroup,33,getHash(dirsavename::dirSave + savename::NameSaveGroup).c_str());
+	strcpy_s(hash.HashUser,33,getHash(dirsavename::dirSave + savename::NameSaveUsers).c_str());
+	strcpy_s(hash.HashReport,33,getHash(dirsavename::dirSave + savename::NameSaveReport).c_str());
+	return hash;
+}
+void SaveHash() {
+	std::fstream File; File.open(savename::NameSaveHash, std::ios::out|std::ios::trunc);
+	File << getHash(dirsavename::dirSave + savename::NameSaveGroup) << std::endl;
+	File << getHash(dirsavename::dirSave + savename::NameSaveUsers) << std::endl;
+	File << getHash(dirsavename::dirSave + savename::NameSaveReport) << std::endl;
+	File.close();
+}
+HashSave GetFileLoadHash() {
+	HashSave hash;
+	std::fstream File; File.open(savename::NameSaveHash, std::ios::in); 
+	File >> hash.HashGroup;
+	File >> hash.HashUser;
+	File >> hash.HashReport;
+	return hash;
+}
 int start();
 //==============
 void saveusers() { Users::Save(); }
@@ -299,6 +327,7 @@ int start() {
 	}
 	loadall();
 	if (Users::Auntification() != 0) { return 3; }
+	
 	if (Users::usr[Users::UserID].Admins != true) { return CabUsers(); }//Users
 	else {CMDbash(); return 0; }//adm
 }
