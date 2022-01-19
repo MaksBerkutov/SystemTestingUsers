@@ -11,5 +11,3 @@ namespace savename {
 namespace dirsavename {
 	static std::string dirSave = "BD\\";//Имя корневой папки
 }
-
-

@@ -49,6 +49,12 @@
     <Filter Include="Module\Hash">
       <UniqueIdentifier>{642fa945-2ce5-45c4-bb67-6e3d27889ca9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="SubModule">
+      <UniqueIdentifier>{2435b89e-6526-4c84-a2c8-795c6a48d1fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SubModule\CheckFile">
+      <UniqueIdentifier>{d7086cb8-0cde-448d-b358-b40207b38a95}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
@@ -103,6 +109,9 @@
     </ClInclude>
     <ClInclude Include="Hash.h">
       <Filter>Module\Hash</Filter>
+    </ClInclude>
+    <ClInclude Include="ChekerFile.h">
+      <Filter>SubModule\CheckFile</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -5,6 +5,7 @@
 #include"Users.h"
 #include<fstream>
 #include <filesystem>
+#include"ChekerFile.h"
 #include <experimental/filesystem> 
 //Как это работает вкраце
 /*
@@ -33,7 +34,7 @@
 *                             #-------------------------------------<Group>--------------------------------------------#
 *                             |В свою очередь класс Group позволяет нам созадвать уникальные груупы с разными юзерами  |
 *                             |1) В каждой группе разные тесты														   |
-*                             |2) Юзер может состоять в разный группах												   |
+*                             |2) Юзер может состоять в разны группах												   |
 *                             #----------------------------------------------------------------------------------------#
 *
 //=============================================================================================>
@@ -159,7 +160,11 @@ namespace Test {
 			std::fstream file; file.open((dirsavename::dirSave + TestName + "\\" + savename::NameSaveTestFile), std::ios::in);
 			if(file.is_open()==false){
 				system("CLS");WordColor("\t\tТеста не существует!\n", Black, Red);
-				system("pause");system("CLS");return;
+				system("pause"); system("CLS"); file.close(); return;
+			}
+			if (ChekerFile::CheckFileSave(dirsavename::dirSave + TestName + "\\" + savename::NameSaveTestFile)!=true) {
+				system("CLS"); WordColor("\t\tТест повреждён!\n", Black, Red);
+				system("pause"); system("CLS"); file.close(); return;
 			}
 			int tmp;
 			file >> tmp;  tests.setSize(tmp);
@@ -227,7 +232,7 @@ namespace Test {
 		};
 		Array::ArrayClass<Array::ArrayClass<SaveDataBase>>SaveS;//Сохранёные тесты
 		Array::ArrayClass<std::string>login;//Логины юзеров который относяться к текущей группе
-		Array::ArrayClass<Test*>test;//Тесты текущей группы
+		Array::ArrayClass<Test* >test;//Тесты текущей группы
 		Array::ArrayClass<Array::ArrayClass<Array::ArrayClass<int>>>ResUsers;//Массив ответов тестов кадого пользователя группы
 		Array::ArrayClass<Array::ArrayClass<int>>Res;//Оценки
 		std::string  NameGroup;

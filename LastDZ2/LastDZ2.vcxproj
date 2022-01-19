@@ -145,6 +145,7 @@
   <ItemGroup>
     <ClInclude Include="ArrayClass.h" />
     <ClInclude Include="Cabinet.h" />
+    <ClInclude Include="ChekerFile.h" />
     <ClInclude Include="CMD.h" />
     <ClInclude Include="directory_set.h" />
     <ClInclude Include="GetValue.h" />
