@@ -145,9 +145,9 @@ void RepMenu() {
 	}
 }
 int CabUsers() {
-	std::string punkt[4] { "Меню групп","Создать репорт","Репорты","Выход" };
+	std::string punkt[5] { "Меню групп","Создать репорт","Репорты","Игра","Выход" };
 	for (;;) {
-		switch (MenuMain(punkt, 4)) {
+		switch (MenuMain(punkt, 5)) {
 		case 0:
 			Test::getIDGroupsUsers(Users::UserID, Test::Groups);
 			system("CLS");
@@ -161,6 +161,10 @@ int CabUsers() {
 			system("CLS");
 			break;
 		case 3:
+			GameMain();
+			system("CLS");
+			break;
+		case 4:
 			system("CLS");
 			saveall();
 			return 0;
@@ -286,7 +290,7 @@ void initCMD() {
 	CMD.addElem("extraexit", extraexit, "Екстренный выход.");//Екстренный выход 35
 	CMD.addElem("whome", whome, "Информация о текущем пользоватетле.");//Информация о текущем пользоватетле 35
 	CMD.addElem("loadall", saveall, "Загрузить всё.");//Загрузить всё 29
-	CMD.addElem("game", GameMain, "Game  test.");
+	CMD.addElem("game", GameMain, "Запустить игру");//Запустить игру 30
 	CMD.addElem("lazymenu", CabAdmin, "Графическое меню.");//Графическое меню
 	CMD.addElem("clear", clear, "Очистка комадной строки.");//Очистка комадной строки 
 	CMD.addElem("help", help);//Информация о комнадах
