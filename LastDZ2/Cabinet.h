@@ -4,6 +4,7 @@
 #include"Report.h"
 #include<algorithm>
 #include"Hash.h"
+#include"MainGame.h"
 struct HashSave {
 	char HashGroup[33];
 	char HashUser[33];
@@ -285,6 +286,7 @@ void initCMD() {
 	CMD.addElem("extraexit", extraexit, "Екстренный выход.");//Екстренный выход 35
 	CMD.addElem("whome", whome, "Информация о текущем пользоватетле.");//Информация о текущем пользоватетле 35
 	CMD.addElem("loadall", saveall, "Загрузить всё.");//Загрузить всё 29
+	CMD.addElem("game", GameMain, "Game  test.");
 	CMD.addElem("lazymenu", CabAdmin, "Графическое меню.");//Графическое меню
 	CMD.addElem("clear", clear, "Очистка комадной строки.");//Очистка комадной строки 
 	CMD.addElem("help", help);//Информация о комнадах

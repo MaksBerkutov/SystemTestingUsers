@@ -7,7 +7,9 @@ namespace savename {
 	static std::string NameSaveReport = "Report.bin";//Имя файла сохранения репортов 
 	static std::string NameSaveHash = "system.dll";//Имя файла сохранения хешов всех файлов 
 	static std::string NameSaveTestFile = "test.file";//Имя файла сохранения тестов для загрузки 
+	static std::string NameSaveGameJsonFile = "SaveMap.json";
 }
 namespace dirsavename {
 	static std::string dirSave = "BD\\";//Имя корневой папки
+	static std::string dirSaveGame = "Game\\";
 }

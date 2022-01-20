@@ -186,3 +186,9 @@ int MenuMain(std::string* str, int size, std::string Arrow = ">") {
 		system("CLS");
 	}
 }
+void setCursorPosition(int y, int x){
+	static const HANDLE hOut = GetStdHandle(STD_OUTPUT_HANDLE);
+	std::cout.flush();
+	COORD coord = { (SHORT)x, (SHORT)y };
+	SetConsoleCursorPosition(hOut, coord);
+}

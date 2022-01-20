@@ -55,6 +55,9 @@
     <Filter Include="SubModule\CheckFile">
       <UniqueIdentifier>{d7086cb8-0cde-448d-b358-b40207b38a95}</UniqueIdentifier>
     </Filter>
+    <Filter Include="SubModule\Game">
+      <UniqueIdentifier>{224adaa4-bfce-49b2-9203-118588263430}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
@@ -112,6 +115,15 @@
     </ClInclude>
     <ClInclude Include="ChekerFile.h">
       <Filter>SubModule\CheckFile</Filter>
+    </ClInclude>
+    <ClInclude Include="MainGame.h">
+      <Filter>SubModule\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>SubModule\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="MapWork.h">
+      <Filter>SubModule\Game</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
